@@ -4,8 +4,7 @@
 A simple and efficient Task Management Application that allows users to manage their tasks by categorizing them into **To-Do, In Progress, and Done** sections. Users can add, edit, and delete tasks, with all changes saved instantly to a MongoDB database. Authentication is handled via Firebase (Google Sign-in). The app is fully responsive and works seamlessly across desktop and mobile devices.
 
 ## Live Demo
-[Live Application Link](https://job-task-a9522.web.app/) *(Update with actual link once deployed)*
-
+[Live Application Link](https://job-task-a9522.web.app/)
 ## Features
 - **User Authentication** (Google Sign-In via Firebase)
 - **Task Management System**:
