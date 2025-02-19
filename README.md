@@ -4,7 +4,7 @@
 A simple and efficient Task Management Application that allows users to manage their tasks by categorizing them into **To-Do, In Progress, and Done** sections. Users can add, edit, and delete tasks, with all changes saved instantly to a MongoDB database. Authentication is handled via Firebase (Google Sign-in). The app is fully responsive and works seamlessly across desktop and mobile devices.
 
 ## Live Demo
-[Live Application Link](#) *(Update with actual link once deployed)*
+[Live Application Link](https://job-task-a9522.web.app/) *(Update with actual link once deployed)*
 
 ## Features
 - **User Authentication** (Google Sign-In via Firebase)
@@ -15,9 +15,9 @@ A simple and efficient Task Management Application that allows users to manage t
 - **Fully Responsive UI**
 - **Backend API**: CRUD operations with Express.js & MongoDB
 - **Optimized UI/UX** with a clean and minimalistic design
-- **Dark Mode Toggle** *(Bonus feature)*
-- **Task Due Dates with Color Indicators** *(Bonus feature)*
-- **Activity Log for tracking changes** *(Bonus feature)*
+- **Dark Mode Toggle** *(can be added later)*
+- **Task Due Dates with Color Indicators** *(can be added later)*
+- **Activity Log for tracking changes** *(can be added later)*
 
 ## Technologies Used
 ### Frontend:
@@ -28,9 +28,9 @@ A simple and efficient Task Management Application that allows users to manage t
 
 ### Backend:
 - **Node.js & Express.js** for API development
-- **MongoDB** (with Mongoose ORM) for database storage
+- **MongoDB** (atlas) for database storage
 - **WebSockets / Change Streams** for real-time updates
-- **JWT Authentication** for API security (if needed)
+- **JWT Authentication** for API security (can be added later)
 
 ## Installation & Setup
 ### Prerequisites:
@@ -41,8 +41,8 @@ A simple and efficient Task Management Application that allows users to manage t
 ### Steps to Run the Application:
 #### 1. Clone the Repository:
 ```sh
-git clone https://github.com/your-repo/task-management-app.git
-cd task-management-app
+git clone https://github.com/jubayer98/simple-task-management.git
+cd simple-task-management
 ```
 
 #### 2. Install Dependencies:
@@ -50,7 +50,7 @@ cd task-management-app
 npm install
 ```
 
-#### 3. Set Up Environment Variables:
+#### 3. Set Up Environment Variables (can be done by following):
 Create a `.env` file in the root directory and configure it with:
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -66,7 +66,7 @@ FIREBASE_APP_ID=your_firebase_app_id
 ```sh
 cd server
 npm install
-npm start
+nodemon index.js
 ```
 
 #### 5. Start Frontend:
@@ -86,8 +86,8 @@ Navigate to `http://localhost:5173/` in your browser.
 
 ### Task Management:
 - `POST /tasks` – Add a new task
-- `GET /tasks` – Retrieve all tasks for the logged-in user
-- `PUT /tasks/:id` – Update task details (title, description, category)
+- `GET /tasks` – Retrieve all tasks for the logged-in user (can be added later)
+- `PATCH /tasks/:id` – Update task details (title, description, category)
 - `DELETE /tasks/:id` – Delete a task
 
 ## Future Improvements
