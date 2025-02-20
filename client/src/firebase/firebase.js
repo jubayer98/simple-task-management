@@ -3,12 +3,12 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/
 
 // Firebase Config (Replace with your actual config)
 const firebaseConfig = {
-    apiKey: "AIzaSyA8A_O4Lok3Lz2HW_728McbSxlQemID8fY",
-    authDomain: "job-task-a9522.firebaseapp.com",
-    projectId: "job-task-a9522",
-    storageBucket: "job-task-a9522.firebasestorage.app",
-    messagingSenderId: "511891943319",
-    appId: "1:511891943319:web:3c75ad983485ba8ca8ded2"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase
